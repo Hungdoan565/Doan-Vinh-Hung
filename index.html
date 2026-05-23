@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Primary Meta -->
+    <title>Đoàn Vĩnh Hưng — Developer Portfolio</title>
+    <meta name="description" content="I turn messy real-world problems into clean, working software. Full-stack developer with React, Node.js, and AI integrations." />
+    <meta name="author" content="Đoàn Vĩnh Hưng" />
+    <meta name="keywords" content="developer, portfolio, React, Node.js, full-stack, JavaScript, TypeScript, Vietnam" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hungdoan.dev/" />
+    <meta property="og:title" content="Đoàn Vĩnh Hưng — Developer Portfolio" />
+    <meta property="og:description" content="I turn messy real-world problems into clean, working software." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Đoàn Vĩnh Hưng — Developer Portfolio" />
+    <meta name="twitter:description" content="I turn messy real-world problems into clean, working software." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- Google Fonts: JetBrains Mono (variable) + Inter (variable) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Blocking Theme Script: prevents flash of wrong theme (FOUC) -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          // default light — no class needed
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
